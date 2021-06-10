@@ -1,0 +1,75 @@
+site_name: ModCS Documentation
+plugins: []
+
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  logo: assets/logo.png
+
+plugins:
+  - search
+
+nav:
+  - 'Home':
+    - 'index.md'
+  - 'API Reference':
+    - 'api/modcs.md'
+    - 'api/game.md'
+    - 'api/key.md'
+    - 'Drawing':
+      - 'api/drawing/surface.md'
+      - 'api/drawing/rect.md'
+      - 'api/drawing/color.md'
+    - 'api/map.md' 
+    - 'api/stage.md'
+    - 'api/tsc.md'
+    - 'Flags':
+      - 'api/flags/flag.md'
+      - 'api/flags/skipflag.md'
+    - 'Sound':
+      - 'api/sound/organya.md'
+      - 'api/sound/sound.md'
+    - 'Game Objects':
+      - 'api/objects/pixel.md'
+      - 'api/objects/direction.md'
+      - 'api/objects/range.md'
+      - 'Player':
+        - 'api/objects/player.md'
+        - 'api/objects/player/collision.md'
+      - 'NPCs':
+        - 'api/objects/npc.md'
+        - 'api/objects/npc/functions.md'
+        - 'api/objects/npc/collision.md'
+        - 'api/objects/npc/id.md'
+        - 'api/objects/npc/bits.md'
+    - 'api/mod.md'
+    - 'api/options.md'
+  - 'License':
+    - 'license.md'
+
+extra_javascript:
+  - assets/dontSaveScroll.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
