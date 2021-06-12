@@ -63,21 +63,21 @@ ModCS.Npc.Delete(npc)
 
 Deletes `npc`. Same effect as `<DNP`.
 
-## ModCS.Npc..DeleteOnNextFrame()
+## ModCS.Npc.Kill()
 
 ```lua
-ModCS.Npc.DeleteOnNextFrame(npc)
-```
-
-Sets `npc` for deletion on the next frame.
-
-## ModCS.Npc.Destroy()
-
-```lua
-ModCS.Npc.Destroy(npc)
+ModCS.Npc.Kill(npc)
 ```
 
 Kills `npc`.
+
+## ModCS.Npc.KillOnNextFrame()
+
+```lua
+ModCS.Npc.KillOnNextFrame(npc)
+```
+
+Sets `npc` for deletion on the next frame.
 
 ## ModCS.Npc.Move()
 

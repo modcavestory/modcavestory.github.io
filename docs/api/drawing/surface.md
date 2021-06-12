@@ -70,3 +70,13 @@ ModCS.Surface.LoadBitmap(id, path)
 ```
 
 Draw the bitmap file specified in `path` to a surface with ID `id`. The path's root is always the game's data folder. Do not add a `.bmp` file extension to the path.
+
+## ModCS.Surface.Screenshot()
+
+```lua
+ModCS.Surface.Screenshot(id, rect)
+```
+
+Draw a screenshot of the current state of the game to Surface with ID `id`.
+
+`rect` is an optional parameter. If specified only `rect` of the screen will be drawn to the Surface. 

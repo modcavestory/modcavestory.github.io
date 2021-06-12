@@ -13,7 +13,7 @@ A ModCS.Npc is userdata. You may access and edit the following values from it:
 | `xm2`           | [Pixel Unit](/api/objects/pixel/)    | Alternative X velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move2()](/api/objects/npc/functions/#modcsnpcmove2). |
 | `xm2`           | [Pixel Unit](/api/objects/pixel/)    | Alternative Y velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move2()](/api/objects/npc/functions/#modcsnpcmove2). |
 | `id`            | [NPC Type ID](/api/objects/npc/id/)    | ID of the NPC.                                               |
-| `flag`          | Number (Casted to integer)           | Flag of the NPC.                                             |
+| `flag`          | [Flag](/api/flags/flag/) | Flag of the NPC.                                             |
 | `event`         | [Event](/api/tsc/#events)            | [TSC Event](/api/tsc/#events) of the NPC.                    |
 | `surf`          | [Surface](/api/drawing/surface/)     | The surface that the NPC will draw from.                     |
 | `hit_voice`     | [Sound ID](/api/sound/sound/#sound-effects-id-reference) | The sound effect that will play when the NPC gets hit.       |

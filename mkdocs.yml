@@ -27,6 +27,30 @@ plugins:
 nav:
   - 'Home':
     - 'index.md'
+    - 'releases.md'
+  - 'Getting Started':
+    - '0 - Introduction':
+      - 'guide/intro.md'
+      - 'guide/intro/install.md'
+      - 'guide/intro/editors.md'
+    - '1 - Basics':
+      - 'guide/basics.md'
+      - 'guide/basics/ui.md'
+      - 'guide/basics/stage.md'
+      - 'guide/basics/tiles.md'
+      - 'guide/basics/bgs.md'
+      - 'guide/basics/npc.md'
+      - 'guide/basics/npctbl.md'
+    - '2 - Text Scripting':
+      - 'guide/tsc.md'
+      - 'guide/tsc/box.md'
+      - 'guide/tsc/door.md'
+      - 'guide/tsc/chest.md'
+    - '3 - Lua Scripting':
+      - 'guide/lua.md'
+      - 'guide/lua/basic.md'
+      - 'guide/lua/drawing.md'
+      - 'guide/lua/npc.md'
   - 'API Reference':
     - 'api/modcs.md'
     - 'api/game.md'
@@ -58,9 +82,6 @@ nav:
         - 'api/objects/npc/id.md'
         - 'api/objects/npc/bits.md'
     - 'api/mod.md'
-    - 'api/options.md'
-  - 'License':
-    - 'license.md'
 
 extra_javascript:
   - assets/dontSaveScroll.js

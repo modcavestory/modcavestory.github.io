@@ -55,3 +55,11 @@ ModCS.Npc.TouchTile(npc)
 ```
 
 Returns true if `npc` is touching any type of collision tile.
+
+## ModCS.Npc.TouchPlayer()
+
+```lua
+ModCS.Npc.TouchPlayer(npc)
+```
+
+Returns true if `npc` is touching the player.
