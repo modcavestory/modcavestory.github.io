@@ -82,6 +82,7 @@ nav:
         - 'api/objects/npc/id.md'
         - 'api/objects/npc/bits.md'
     - 'api/mod.md'
+    - 'api/options.md'
 
 extra_javascript:
   - assets/dontSaveScroll.js
