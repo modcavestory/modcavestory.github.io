@@ -23,6 +23,10 @@ Return a number that represents the current game mode.
 | 2     | Title screen.     |
 | 3     | Action.           |
 
+## ModCS.Game.IsNew()
+
+Returns true if the 'New' option in the title screen was selected. Returns false otherwise.
+
 ## ModCS.Game.Init()
 
 This function is called whenever a game mode is started.
