@@ -81,6 +81,10 @@ nav:
         - 'api/objects/npc/collision.md'
         - 'api/objects/npc/id.md'
         - 'api/objects/npc/bits.md'
+      - 'Carets':
+        - 'api/objects/caret.md'
+        - 'api/objects/caret/functions.md'
+        - 'api/objects/caret/id.md'
     - 'api/mod.md'
     - 'api/options.md'
 

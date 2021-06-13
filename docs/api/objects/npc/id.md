@@ -4,7 +4,7 @@ An **NPC Type ID** (Also known as Act ID or character code) is a number that def
 
 ## NPC Table
 
-A table of default NPC properties are stored in a `npc.tbl` file in the data folder. You may edit this table with your favorite Cave Story editor. When NPCs of a set type are spawned they will initially properties from their NPC Table entry, although these properties can be changed for NPCs with scripting at any time.
+A table of default NPC properties are stored in a `npc.tbl` file in the data folder. You may edit this table with your favorite Cave Story editor. When NPCs of a set type are spawned they will initially use properties from their NPC Table entry, although these properties can be changed for NPCs with scripting at any time.
 
 !!! Note
 	Some vanilla NPCs change their damage or other features gotten from the NPC Table dynamically. Changing the NPC Table properties on these NPCs will most likely have little effect. 
