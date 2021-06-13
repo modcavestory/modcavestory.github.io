@@ -11,7 +11,7 @@ This download contains:
 - The ModCS EXE
 - A DoConfig EXE
 - A vanilla `data` folder containing all vanilla `data` folder assets, with PBMs renamed to BMPs.
-- Extra files necessary for ModCS to function (`data/stage.tbl`, `data/bullet.tbl`, `data/Scripts/main.lua`)
+- Extra files necessary for ModCS to function (`data/stage.tbl`, `data/bullet.tbl`, `data/caret.tbl`, `data/Scripts/main.lua`)
 
 ## 0.1.1 - Migrating a mod to ModCS
 
@@ -27,8 +27,9 @@ The following guide will show you how to migrate a Freeware `data` folder to Mod
 1. Make sure all bitmaps in your data folder have a `.bmp` extension.
 2. Create a `Scripts` folder in `data` and create an empty `main.lua` file there. (Make sure you edit the file extension).
 3. From a vanilla ModCS install copy the `data/bullet.tbl` file (Or from a PC Cave Story+ install copy the `data/base/bullet.tbl` file) to your mod's `data` folder.
-4. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your Stage Table to a `stage.tbl` and place it in your `data` folder. 
-5. Replace your mod EXE with the ModCS EXE.
+4. From a vanilla ModCS install copy the `data/caret.tbl` file to your mod's `data` folder.
+5. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your Stage Table to a `stage.tbl` and place it in your `data` folder. 
+6. Replace your mod EXE with the ModCS EXE.
 
 ### 0.1.1.2 - Migrating from CSE2 Enhanced
 
@@ -42,5 +43,6 @@ The following guide will show you how to migrate a CSE2 Enhanced `data` folder t
 3. Move the `data/Resources` and `data/PixTone` folders to somewhere else, as they are not used by ModCS.
 4. Create a `Scripts` folder in `data` and create an empty `main.lua` file there. (Make sure you edit the file extension).
 5. From a vanilla ModCS install copy the `data/bullet.tbl` file (Or from a PC Cave Story+ install copy the `data/base/bullet.tbl` file) to your mod's `data` folder.
-6. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your `data/mrmap.bin` file to a `stage.tbl`. 
-7. Replace your mod EXE with the ModCS EXE.
+6. From a vanilla ModCS install copy the `data/caret.tbl` file to your mod's `data` folder.
+7. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your `data/mrmap.bin` file to a `stage.tbl`. 
+8. Replace your mod EXE with the ModCS EXE.
