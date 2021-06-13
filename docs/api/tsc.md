@@ -67,8 +67,8 @@ ModCS allows you to have custom TextScript commands. If a function `ModCS.Tsc.Co
 ??? Example
 	This is an example function for a TextScript command that will print its first argument to the debug console.
 	```lua linenums="1"
-	function ModCS.Tsc.CommandFOO
-		no = ModCS.Tsc.GetArgument(1) -- Get the first argument of the running command
+	function ModCS.Tsc.CommandFOO()
+		local no = ModCS.Tsc.GetArgument(1) -- Get the first argument of the running command
 		print(no)
 	end
 	```
