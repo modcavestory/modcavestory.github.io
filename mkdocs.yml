@@ -75,6 +75,7 @@ nav:
       - 'Player':
         - 'api/objects/player.md'
         - 'api/objects/player/collision.md'
+        - 'api/objects/player/equip.md'
       - 'NPCs':
         - 'api/objects/npc.md'
         - 'api/objects/npc/functions.md'

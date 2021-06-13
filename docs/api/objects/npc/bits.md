@@ -38,3 +38,11 @@ ModCS.Npc.UnsetBit(npc, bit)
 ```
 
 Unsets the bit `bit` for `npc`.
+
+## ModCS.Npc.CheckBit()
+
+```lua
+ModCS.Npc.CheckBit(npc, bit)
+```
+
+Returns true if the bit `bit` for `npc` is set. Returns false otherwise.
