@@ -55,7 +55,7 @@ During a TextScript event, wait `ticks` ticks before running the next command.
 ## ModCS.Tsc.GetArgument()
 
 ```lua
-ModCS.Tsc.Wait(no)
+ModCS.Tsc.GetArgument(no)
 ```
 
 During a custom TextScript command, get the `no` argument of the running command.
@@ -77,7 +77,7 @@ ModCS allows you to have custom TextScript commands. If a function `ModCS.Tsc.Co
 	#0100
 	<FOO0002<END
 	```
-
+	
 	Console output:
 	```
 	2
