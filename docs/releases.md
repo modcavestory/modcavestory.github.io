@@ -21,13 +21,9 @@
 To update from ModCS 0.1.0.0:
 
 1. Replace your ModCS executable with a ModCS 0.1.1.0 one.
-
 2. From a vanilla ModCS 0.1.1.0 install copy the `caret.tbl` and `music.tbl` files to your mod's `data` folder.
-
 3. Move all ORG files from Resources to a `data/Org` folder.
-
 4. Move all Credit bitmaps from Resources to a `data/Credits` folder.
-
 5. Move the PIXEL bitmap from Resources to the `data` folder.
 
 ### Download
