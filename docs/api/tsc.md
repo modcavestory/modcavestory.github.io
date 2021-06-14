@@ -58,7 +58,7 @@ During a TextScript event, wait `ticks` ticks before running the next command.
 ModCS.Tsc.GetArgument(no)
 ```
 
-During a custom TextScript command, get the `no` argument of the running command.
+During a custom TextScript command, get the `no` argument of the running command. Calling this function will also 'skip' the argument from the TSC parser.
 
 ## Custom Commands
 
