@@ -11,6 +11,16 @@ Sets the [Rect](/api/drawing/rect/) of `npc` to a Rect with `left`, `top`, `righ
 
 If a `rect` is specified, set the Rect of `npc` to that Rect instead.
 
+## ModCS.Npc.OffsetRect()
+
+```lua
+ModCS.Npc.OffsetRect(npc, left, top, right, bottom)
+```
+
+Adds `left`, `top`, `right`, `bottom` to the the `left`, `top`, `right`, `bottom` values of the [Rect](/api/drawing/rect/) of `npc`.
+
+`right` and `bottom` are optional parameters. If they are not specified, `left` and `top` will be used in their place instead.
+
 ## ModCS.Npc.SetHitbox()
 
 ```lua

@@ -11,6 +11,16 @@ Sets the [Rect](/api/drawing/rect/) of `crt` to a Rect with `left`, `top`, `righ
 
 If a `rect` is specified, set the Rect of `crt` to that Rect instead.
 
+## ModCS.Caret.OffsetRect()
+
+```lua
+ModCS.Caret.OffsetRect(crt, left, top, right, bottom)
+```
+
+Adds `left`, `top`, `right`, `bottom` to the the `left`, `top`, `right`, `bottom` values of the [Rect](/api/drawing/rect/) of `crt`.
+
+`right` and `bottom` are optional parameters. If they are not specified, `left` and `top` will be used in their place instead.
+
 ## ModCS.Caret.ActCode()
 
 ```lua

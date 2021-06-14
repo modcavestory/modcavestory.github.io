@@ -59,6 +59,9 @@ This information can help us do certain modifications to the NPC in our code. Fo
 
 ## 3.3.1 - Editing NPC Rects
 
+!!! Note
+	This part of the guide is for advanced Rect changing. While it's still recommended to read it, if you simply wish to offset the sprites of an NPC from a spritesheet use [ModCS.Npc.OffsetRect()](/api/objects/npc/functions/#modcsnpcoffsetrect).
+
 Similarly to Act States, most NPCs also have **Animation States**. These define what sprite the NPC should be currently using. 
 
 You can find out Animation States using a similar method as the one for finding out Act States:
