@@ -4,12 +4,15 @@ The **ModCS.Player global object** represents the player (Also known as My Chara
 
 ModCS.Player is userdata. You may access and edit the following values from it:
 
-| Value    | Type                                 | Usage                    |
-| -------- | ------------------------------------ | ------------------------ |
-| `x`      | [Pixel Unit](/api/objects/pixel/)    | The player's X position. |
-| `y`      | [Pixel Unit](/api/objects/pixel/)    | The player's Y position. |
-| `air`    | Number (Casted to integer)           | Air value of the player. |
-| `direct` | [Direction](/api/objects/direction/) | The player's direction.  |
+| Value        | Type                                 | Usage                                                        |
+| ------------ | ------------------------------------ | ------------------------------------------------------------ |
+| `x`          | [Pixel Unit](/api/objects/pixel/)    | The player's X position.                                     |
+| `y`          | [Pixel Unit](/api/objects/pixel/)    | The player's Y position.                                     |
+| `xm`         | [Pixel Unit](/api/objects/pixel/)    | X velocity of the Player.                                    |
+| `ym`         | [Pixel Unit](/api/objects/pixel/)    | Y velocity of the Player.                                    |
+| `direct`     | [Direction](/api/objects/direction/) | The player's direction.                                      |
+| `boost_fuel` | Number (Casted to integer)           | The fuel of the Player's [Booster](/api/objects/player/equip/). |
+| `air`        | Number (Casted to integer)           | Air value of the player.                                     |
 
 ## ModCS.Player.IsHit()
 
