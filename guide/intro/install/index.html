@@ -1090,6 +1090,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/objects/player/equip/" class="md-nav__link">
+        Player Equip
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1183,6 +1195,69 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10_6" type="checkbox" id="__nav_3_10_6" >
+      
+      <label class="md-nav__link" for="__nav_3_10_6">
+        Carets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Carets" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          Carets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/objects/caret/" class="md-nav__link">
+        ModCS.Caret
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/objects/caret/functions/" class="md-nav__link">
+        Caret Manipulation Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/objects/caret/id/" class="md-nav__link">
+        Caret Type IDs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1234,14 +1309,14 @@
                 
                 <h1 id="01-installation-and-getting-ready">0.1 - Installation and getting ready</h1>
 <p>Now, obviously, you would have to download ModCS.</p>
-<p><a class="md-button md-button--primary" href="/assets/releases/modcs0100.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download Latest ModCS</a></p>
+<p><a class="md-button md-button--primary" href="/assets/releases/modcs0110.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download Latest ModCS</a></p>
 <p>The downloaded ZIP will need to be extracted before usage, you can do that with a program like <a href="https://www.7-zip.org">7-Zip</a>.</p>
 <p>This download contains:</p>
 <ul>
 <li>The ModCS EXE</li>
 <li>A DoConfig EXE</li>
 <li>A vanilla <code>data</code> folder containing all vanilla <code>data</code> folder assets, with PBMs renamed to BMPs.</li>
-<li>Extra files necessary for ModCS to function (<code>data/stage.tbl</code>, <code>data/bullet.tbl</code>, <code>data/Scripts/main.lua</code>)</li>
+<li>Extra files necessary for ModCS to function (<code>data/stage.tbl</code>, <code>data/bullet.tbl</code>, <code>data/caret.tbl</code>, <code>data/music.tbl</code>, <code>data/Scripts/main.lua</code>)</li>
 </ul>
 <h2 id="011-migrating-a-mod-to-modcs">0.1.1 - Migrating a mod to ModCS</h2>
 <p>If you simply want to <strong>switch engines</strong> from another engine (Original Freeware EXE, CSE2, etc.) to ModCS then you are probably not willing to start with the vanilla data folder. This section will cover how to migrate from Freeware and from CSE2 Enhanced.</p>
@@ -1255,6 +1330,10 @@
 <li>Make sure all bitmaps in your data folder have a <code>.bmp</code> extension.</li>
 <li>Create a <code>Scripts</code> folder in <code>data</code> and create an empty <code>main.lua</code> file there. (Make sure you edit the file extension).</li>
 <li>From a vanilla ModCS install copy the <code>data/bullet.tbl</code> file (Or from a PC Cave Story+ install copy the <code>data/base/bullet.tbl</code> file) to your mod's <code>data</code> folder.</li>
+<li>From a vanilla ModCS install copy the <code>data/caret.tbl</code> and <code>data/music.tbl</code> files to your mod's <code>data</code> folder.</li>
+<li>Move all ORG files from Resources to a <code>data/Org</code> folder using Resource Hacker (Make sure they have a <code>.org</code> file extension).</li>
+<li>Move all Credit bitmaps from Resources to a <code>data/Credits</code> folder using Resource Hacker (Make sure they have a <code>.bmp</code> file extension).</li>
+<li>Move the PIXEL bitmap from Resources to the <code>data</code> folder using Resource Hacker (Make sure it has a <code>.bmp</code> file extension).</li>
 <li>Using <a href="/guide/intro/editors/#022-the-kings-table">The King's Table</a> convert your Stage Table to a <code>stage.tbl</code> and place it in your <code>data</code> folder. </li>
 <li>Replace your mod EXE with the ModCS EXE.</li>
 </ol>
@@ -1267,9 +1346,13 @@
 <ol>
 <li>Replace all transparent pixels in your <code>.png</code> files with pure black pixels (RGB 0, 0, 0; HEX #000000) in an image editing tool.</li>
 <li>Save them all as 24-bit <code>.bmp</code>s in your image editing tool and delete all of the original <code>.png</code>s. This is done because ModCS does not support the PNG format. </li>
-<li>Move the <code>data/Resources</code> and <code>data/PixTone</code> folders to somewhere else, as they are not used by ModCS.</li>
+<li>Move the <code>data/PixTone</code> folder to somewhere else, as its not used by ModCS.</li>
+<li>Move all Credit images from <code>data/Resource/BITMAP</code> to <code>data/Credits</code>.</li>
+<li>Move <code>Pixel.bmp</code> from <code>data/Resource/BITMAP</code> to <code>data</code>.</li>
+<li>Move all ORG files from <code>data/Resource/ORG</code> to <code>data/Org</code>.</li>
 <li>Create a <code>Scripts</code> folder in <code>data</code> and create an empty <code>main.lua</code> file there. (Make sure you edit the file extension).</li>
 <li>From a vanilla ModCS install copy the <code>data/bullet.tbl</code> file (Or from a PC Cave Story+ install copy the <code>data/base/bullet.tbl</code> file) to your mod's <code>data</code> folder.</li>
+<li>From a vanilla ModCS install copy the <code>data/caret.tbl</code> and <code>data/music.tbl</code> files to your mod's <code>data</code> folder.</li>
 <li>Using <a href="/guide/intro/editors/#022-the-kings-table">The King's Table</a> convert your <code>data/mrmap.bin</code> file to a <code>stage.tbl</code>. </li>
 <li>Replace your mod EXE with the ModCS EXE.</li>
 </ol>

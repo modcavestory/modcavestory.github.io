@@ -331,16 +331,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modcs-0100" class="md-nav__link">
-    ModCS 0.1.0.0
+  <a href="#modcs-0110" class="md-nav__link">
+    ModCS 0.1.1.0
   </a>
   
-    <nav class="md-nav" aria-label="ModCS 0.1.0.0">
+    <nav class="md-nav" aria-label="ModCS 0.1.1.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#changelog" class="md-nav__link">
     Changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
   </a>
   
 </li>
@@ -351,9 +365,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
+  <a href="#modcs-0100" class="md-nav__link">
+    ModCS 0.1.0.0
+  </a>
+  
+    <nav class="md-nav" aria-label="ModCS 0.1.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changelog_1" class="md-nav__link">
+    Changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download_1" class="md-nav__link">
     Download
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1088,6 +1122,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/objects/player/equip/" class="md-nav__link">
+        Player Equip
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1181,6 +1227,69 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10_6" type="checkbox" id="__nav_3_10_6" >
+      
+      <label class="md-nav__link" for="__nav_3_10_6">
+        Carets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Carets" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          Carets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/objects/caret/" class="md-nav__link">
+        ModCS.Caret
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/objects/caret/functions/" class="md-nav__link">
+        Caret Manipulation Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/objects/caret/id/" class="md-nav__link">
+        Caret Type IDs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1231,18 +1340,44 @@
                 
                 
                 <h1 id="modcs-releases">ModCS Releases</h1>
+<h2 id="modcs-0110">ModCS 0.1.1.0</h2>
+<h3 id="changelog">Changelog</h3>
+<ul>
+<li>Add <a href="/api/objects/caret/">ModCS.Npc.Caret</a>, which contains API for spawning and modifying Carets.</li>
+<li>Credit bitmaps, Pixel.bmp and ORGs are now contained in the <code>data</code> folder rather than in game resources.</li>
+<li>Add <code>caret.tbl</code> and <code>music.tbl</code> files to the <code>data</code> folder.</li>
+<li>Add <code>xm</code>, <code>ym</code> and <code>boost_fuel</code> to <a href="/api/objects/player/">ModCS.Player</a>.</li>
+<li>Add <a href="/api/objects/npc/functions/#modcsnpcoffsetrect">ModCS.Npc.OffsetRect()</a>.</li>
+<li>Add <a href="/api/objects/npc/bits/#modcsnpccheckbit">ModCS.Npc.CheckBit()</a>.</li>
+<li>Add <a href="/api/game/#modcsgameisnew">ModCS.Game.IsNew()</a>.</li>
+<li>Fix an issue involving <a href="/api/tsc/#modcstscjump">ModCS.Tsc.Jump()</a> skipping characters.</li>
+<li>The title screen will now display the <a href="/api/mod/#modcsmodsetversion">mod version</a> rather than the ModCS version.</li>
+<li>Remove and fix some warnings.</li>
+<li>Update examples.</li>
+</ul>
+<h3 id="updating">Updating</h3>
+<p>To update from ModCS 0.1.0.0:</p>
+<ol>
+<li>Replace your ModCS executable with a ModCS 0.1.1.0 one.</li>
+<li>From a vanilla ModCS 0.1.1.0 install copy the <code>caret.tbl</code> and <code>music.tbl</code> files to your mod's <code>data</code> folder.</li>
+<li>Move all ORG files from Resources to a <code>data/Org</code> folder.</li>
+<li>Move all Credit bitmaps from Resources to a <code>data/Credits</code> folder.</li>
+<li>Move the PIXEL bitmap from Resources to the <code>data</code> folder.</li>
+</ol>
+<h3 id="download">Download</h3>
+<p><a href="/assets/releases/modcs0110.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.1.0</a></p>
 <h2 id="modcs-0100">ModCS 0.1.0.0</h2>
 <p>Initial ModCS Release.</p>
-<h3 id="changelog">Changelog</h3>
+<h3 id="changelog_1">Changelog</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is the changelog from version 0.0.1.2, the version used for the mod <a href="https://doukutsuclub.knack.com/database#search-database/mod-details/5fbab65b03e82f001bcd17e7/">Doku Goes To McDonalds</a>.</p>
 </div>
 <ul>
-<li>Added "Examples" folder to <code>data/Scripts</code></li>
-<li>Added <a href="/api/drawing/surface/#modcssurfacescreenshot">ModCS.Surface.Screenshot()</a></li>
+<li>Added "Examples" folder to <code>data/Scripts</code>.</li>
+<li>Added <a href="/api/drawing/surface/#modcssurfacescreenshot">ModCS.Surface.Screenshot()</a>.</li>
 </ul>
-<h2 id="download">Download</h2>
+<h3 id="download_1">Download</h3>
 <p><a href="/assets/releases/modcs0100.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.0.0</a></p>
                 
               

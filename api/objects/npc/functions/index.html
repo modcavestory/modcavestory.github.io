@@ -1030,6 +1030,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../player/equip/" class="md-nav__link">
+        Player Equip
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1111,6 +1123,13 @@
         <li class="md-nav__item">
   <a href="#modcsnpcsetrect" class="md-nav__link">
     ModCS.Npc.SetRect()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcsnpcoffsetrect" class="md-nav__link">
+    ModCS.Npc.OffsetRect()
   </a>
   
 </li>
@@ -1228,6 +1247,69 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10_6" type="checkbox" id="__nav_3_10_6" >
+      
+      <label class="md-nav__link" for="__nav_3_10_6">
+        Carets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Carets" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          Carets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../caret/" class="md-nav__link">
+        ModCS.Caret
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../caret/functions/" class="md-nav__link">
+        Caret Manipulation Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../caret/id/" class="md-nav__link">
+        Caret Type IDs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1284,6 +1366,11 @@
 </code></pre></div>
 <p>Sets the <a href="/api/drawing/rect/">Rect</a> of <code>npc</code> to a Rect with <code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code>.</p>
 <p>If a <code>rect</code> is specified, set the Rect of <code>npc</code> to that Rect instead.</p>
+<h2 id="modcsnpcoffsetrect">ModCS.Npc.OffsetRect()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">OffsetRect</span><span class="p">(</span><span class="n">npc</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">bottom</span><span class="p">)</span>
+</code></pre></div>
+<p>Adds <code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code> to the the <code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code> values of the <a href="/api/drawing/rect/">Rect</a> of <code>npc</code>.</p>
+<p><code>right</code> and <code>bottom</code> are optional parameters. If they are not specified, <code>left</code> and <code>top</code> will be used in their place instead.</p>
 <h2 id="modcsnpcsethitbox">ModCS.Npc.SetHitbox()</h2>
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">SetHitbox</span><span class="p">(</span><span class="n">npc</span><span class="p">,</span> <span class="n">front</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">back</span><span class="p">,</span> <span class="n">bottom</span><span class="p">)</span>
 <span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">SetHitbox</span><span class="p">(</span><span class="n">npc</span><span class="p">,</span> <span class="n">rangerect</span><span class="p">)</span>

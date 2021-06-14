@@ -1110,6 +1110,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/player/equip/" class="md-nav__link">
+        Player Equip
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1203,6 +1215,69 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10_6" type="checkbox" id="__nav_3_10_6" >
+      
+      <label class="md-nav__link" for="__nav_3_10_6">
+        Carets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Carets" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          Carets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/" class="md-nav__link">
+        ModCS.Caret
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/functions/" class="md-nav__link">
+        Caret Manipulation Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/id/" class="md-nav__link">
+        Caret Type IDs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1284,17 +1359,17 @@
 </code></pre></div>
 <p>During a TextScript event, wait <code>ticks</code> ticks before running the next command.</p>
 <h2 id="modcstscgetargument">ModCS.Tsc.GetArgument()</h2>
-<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Tsc</span><span class="p">.</span><span class="n">Wait</span><span class="p">(</span><span class="n">no</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Tsc</span><span class="p">.</span><span class="n">GetArgument</span><span class="p">(</span><span class="n">no</span><span class="p">)</span>
 </code></pre></div>
-<p>During a custom TextScript command, get the <code>no</code> argument of the running command.</p>
+<p>During a custom TextScript command, get the <code>no</code> argument of the running command. Calling this function will also 'skip' the argument from the TSC parser.</p>
 <h2 id="custom-commands">Custom Commands</h2>
 <p>ModCS allows you to have custom TextScript commands. If a function <code>ModCS.Tsc.CommandXXX</code> is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command <code>&lt;XXX</code>.</p>
 <details class="example"><summary>Example</summary><p>This is an example function for a TextScript command that will print its first argument to the debug console.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nc">ModCS</span><span class="p">.</span><span class="nc">Tsc</span><span class="p">.</span><span class="nf">CommandFOO</span>
-    <span class="n">no</span> <span class="o">=</span> <span class="n">ModCS</span><span class="p">.</span><span class="n">Tsc</span><span class="p">.</span><span class="n">GetArgument</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">-- Get the first argument of the running command</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nc">ModCS</span><span class="p">.</span><span class="nc">Tsc</span><span class="p">.</span><span class="nf">CommandFOO</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">no</span> <span class="o">=</span> <span class="n">ModCS</span><span class="p">.</span><span class="n">Tsc</span><span class="p">.</span><span class="n">GetArgument</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">-- Get the first argument of the running command</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">no</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div>
