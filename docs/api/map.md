@@ -32,7 +32,7 @@ ModCS.Map.GetHeight()
 
 Returns the height in tile units of the current loaded map.
 
-## ModCS.Map.GetFilename()
+## ModCS.Map.GetAttribute()
 
 ```lua
 ModCS.Map.GetAttribute(x, y)
