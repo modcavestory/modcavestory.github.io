@@ -10,7 +10,6 @@ Old releases will not be supported.
 - Errors are now logged to the debug console.
 - Fix an issue involving [ModCS.Stage.Transfer()](/api/stage/#modcsstagetransfer) not skipping TSC characters if used in a TSC command.
 - Fix a vanilla Cave Story bug where the inventory screen would have weird behavior if the player has items but no weapons.
-- Update examples.
 
 ### Updating
 
