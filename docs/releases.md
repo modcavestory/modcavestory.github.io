@@ -1,5 +1,7 @@
 # ModCS Releases
 
+Old releases will not be supported.
+
 ## ModCS 0.1.1.1
 
 ### Changelog
