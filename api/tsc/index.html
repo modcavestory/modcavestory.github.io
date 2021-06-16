@@ -1363,7 +1363,7 @@
 </code></pre></div>
 <p>During a custom TextScript command, get the <code>no</code> argument of the running command. Calling this function will also 'skip' the argument from the TSC parser.</p>
 <h2 id="custom-commands">Custom Commands</h2>
-<p>ModCS allows you to have custom TextScript commands. If a function <code>ModCS.Tsc.CommandXXX</code> is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command <code>&lt;XXX</code>.</p>
+<p>ModCS allows you to overwrite TextScript commands and to have custom ones as well. If a function <code>ModCS.Tsc.CommandXXX</code> is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command <code>&lt;XXX</code>.</p>
 <details class="example"><summary>Example</summary><p>This is an example function for a TextScript command that will print its first argument to the debug console.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
