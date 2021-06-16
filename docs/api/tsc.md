@@ -62,7 +62,7 @@ During a custom TextScript command, get the `no` argument of the running command
 
 ## Custom Commands
 
-ModCS allows you to have custom TextScript commands. If a function `ModCS.Tsc.CommandXXX` is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command `<XXX`.
+ModCS allows you to overwrite TextScript commands and to have custom ones as well. If a function `ModCS.Tsc.CommandXXX` is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command `<XXX`.
 
 ??? Example
 	This is an example function for a TextScript command that will print its first argument to the debug console.

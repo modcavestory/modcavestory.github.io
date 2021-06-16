@@ -8,4 +8,4 @@ To get started you may be interested in the [Getting Started section](/guide/int
 
 Need help with the API? Want to contribute to the documentation? Have a suggestion for the API? Join the [:material-discord: Discord Server](https://discord.gg/r5qhtqddhW)!
 
-[:material-download: Download ModCS (0.1.1.0)](/assets/releases/modcs0110.zip){ .md-button .md-button--primary } [All versions](/releases){ .md-button }
+[:material-download: Download ModCS (0.1.1.1)](/assets/releases/modcs0111.zip){ .md-button .md-button--primary } [All versions](/releases){ .md-button }

@@ -1,5 +1,25 @@
 # ModCS Releases
 
+## ModCS 0.1.1.1
+
+### Changelog
+
+- Allow [overwriting vanilla TextScript commands](/api/tsc/#custom-commands).
+- Errors are now logged to the debug console.
+- Fix an issue involving [ModCS.Stage.Transfer()](/api/stage/#modcsstagetransfer) not skipping TSC characters if used in a TSC command.
+- Fix a vanilla Cave Story bug where the inventory screen would have weird behavior if the player has items but no weapons.
+- Update examples.
+
+### Updating
+
+To update from ModCS 0.1.1.0:
+
+- Replace your ModCS executable with a ModCS 0.1.1.1 one.
+
+### Download
+
+[:material-download: Download ModCS 0.1.1.1](/assets/releases/modcs0111.zip)
+
 ## ModCS 0.1.1.0
 
 ### Changelog
