@@ -331,11 +331,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modcs-0111" class="md-nav__link">
-    ModCS 0.1.1.1
+  <a href="#modcs-0112" class="md-nav__link">
+    ModCS 0.1.1.2
   </a>
   
-    <nav class="md-nav" aria-label="ModCS 0.1.1.1">
+    <nav class="md-nav" aria-label="ModCS 0.1.1.2">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -365,11 +365,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modcs-0110" class="md-nav__link">
-    ModCS 0.1.1.0
+  <a href="#modcs-0111" class="md-nav__link">
+    ModCS 0.1.1.1
   </a>
   
-    <nav class="md-nav" aria-label="ModCS 0.1.1.0">
+    <nav class="md-nav" aria-label="ModCS 0.1.1.1">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -399,11 +399,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modcs-0100" class="md-nav__link">
-    ModCS 0.1.0.0
+  <a href="#modcs-0110" class="md-nav__link">
+    ModCS 0.1.1.0
   </a>
   
-    <nav class="md-nav" aria-label="ModCS 0.1.0.0">
+    <nav class="md-nav" aria-label="ModCS 0.1.1.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -414,7 +414,41 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#updating_2" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#download_2" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcs-0100" class="md-nav__link">
+    ModCS 0.1.0.0
+  </a>
+  
+    <nav class="md-nav" aria-label="ModCS 0.1.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changelog_3" class="md-nav__link">
+    Changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download_3" class="md-nav__link">
     Download
   </a>
   
@@ -1375,23 +1409,35 @@
                 
                 <h1 id="modcs-releases">ModCS Releases</h1>
 <p>Old releases will not be supported.</p>
-<h2 id="modcs-0111">ModCS 0.1.1.1</h2>
+<h2 id="modcs-0112">ModCS 0.1.1.2</h2>
 <h3 id="changelog">Changelog</h3>
+<ul>
+<li>Fix an issue where <a href="/api/drawing/rect/#modcsrectput2surface">ModCS.Rect.Put2Surface()</a> would fail drawing if there were parts of the <a href="/api/drawing/rect/">Rect</a> being drawn off the target <a href="/api/drawing/surface/">Surface</a>.</li>
+</ul>
+<h3 id="updating">Updating</h3>
+<p>To update from ModCS 0.1.1.1:</p>
+<ul>
+<li>Replace your ModCS executable with a ModCS 0.1.1.2 one.</li>
+</ul>
+<h3 id="download">Download</h3>
+<p><a href="/assets/releases/modcs0112.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.1.2</a></p>
+<h2 id="modcs-0111">ModCS 0.1.1.1</h2>
+<h3 id="changelog_1">Changelog</h3>
 <ul>
 <li>Allow <a href="/api/tsc/#custom-commands">overwriting vanilla TextScript commands</a>.</li>
 <li>Errors are now logged to the debug console.</li>
 <li>Fix an issue involving <a href="/api/stage/#modcsstagetransfer">ModCS.Stage.Transfer()</a> not skipping TSC characters if used in a TSC command.</li>
 <li>Fix a vanilla Cave Story bug where the inventory screen would have weird behavior if the player has items but no weapons.</li>
 </ul>
-<h3 id="updating">Updating</h3>
+<h3 id="updating_1">Updating</h3>
 <p>To update from ModCS 0.1.1.0:</p>
 <ul>
 <li>Replace your ModCS executable with a ModCS 0.1.1.1 one.</li>
 </ul>
-<h3 id="download">Download</h3>
+<h3 id="download_1">Download</h3>
 <p><a href="/assets/releases/modcs0111.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.1.1</a></p>
 <h2 id="modcs-0110">ModCS 0.1.1.0</h2>
-<h3 id="changelog_1">Changelog</h3>
+<h3 id="changelog_2">Changelog</h3>
 <ul>
 <li>Add <a href="/api/objects/caret/">ModCS.Npc.Caret</a>, which contains API for spawning and modifying Carets.</li>
 <li>Credit bitmaps, Pixel.bmp and ORGs are now contained in the <code>data</code> folder rather than in game resources.</li>
@@ -1405,7 +1451,7 @@
 <li>Remove and fix some warnings.</li>
 <li>Update examples.</li>
 </ul>
-<h3 id="updating_1">Updating</h3>
+<h3 id="updating_2">Updating</h3>
 <p>To update from ModCS 0.1.0.0:</p>
 <ol>
 <li>Replace your ModCS executable with a ModCS 0.1.1.0 one.</li>
@@ -1414,11 +1460,11 @@
 <li>Move all Credit bitmaps from Resources to a <code>data/Credits</code> folder.</li>
 <li>Move the PIXEL bitmap from Resources to the <code>data</code> folder.</li>
 </ol>
-<h3 id="download_1">Download</h3>
+<h3 id="download_2">Download</h3>
 <p><a href="/assets/releases/modcs0110.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.1.0</a></p>
 <h2 id="modcs-0100">ModCS 0.1.0.0</h2>
 <p>Initial ModCS Release.</p>
-<h3 id="changelog_2">Changelog</h3>
+<h3 id="changelog_3">Changelog</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is the changelog from version 0.0.1.2, the version used for the mod <a href="https://doukutsuclub.knack.com/database#search-database/mod-details/5fbab65b03e82f001bcd17e7/">Doku Goes To McDonalds</a>.</p>
@@ -1427,7 +1473,7 @@
 <li>Added "Examples" folder to <code>data/Scripts</code>.</li>
 <li>Added <a href="/api/drawing/surface/#modcssurfacescreenshot">ModCS.Surface.Screenshot()</a>.</li>
 </ul>
-<h3 id="download_2">Download</h3>
+<h3 id="download_3">Download</h3>
 <p><a href="/assets/releases/modcs0100.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg></span> Download ModCS 0.1.0.0</a></p>
                 
               
