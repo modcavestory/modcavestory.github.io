@@ -2,6 +2,22 @@
 
 Old releases will not be supported.
 
+## ModCS 0.1.1.2
+
+### Changelog
+
+- Fix an issue where [ModCS.Rect.Put2Surface()](/api/drawing/rect/#modcsrectput2surface) would fail drawing if there were parts of the [Rect](/api/drawing/rect/) being drawn off the target [Surface](/api/drawing/surface/).
+
+### Updating
+
+To update from ModCS 0.1.1.1:
+
+- Replace your ModCS executable with a ModCS 0.1.1.2 one.
+
+### Download
+
+[:material-download: Download ModCS 0.1.1.2](/assets/releases/modcs0112.zip)
+
 ## ModCS 0.1.1.1
 
 ### Changelog
