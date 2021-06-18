@@ -57,7 +57,7 @@ Adds `life` to the player's life points.
 ## ModCS.Player.AddMaxLife()
 
 ```lua
-ModCS.Player.AddLife(life)
+ModCS.Player.AddMaxLife(life)
 ```
 
 Adds `life` to the player's max life points.
