@@ -41,7 +41,7 @@ To update from ModCS 0.1.1.0:
 
 ### Changelog
 
-- Add [ModCS.Npc.Caret](/api/objects/caret/), which contains API for spawning and modifying Carets.
+- Add [ModCS.Caret](/api/objects/caret/), which contains API for spawning and modifying Carets.
 - Credit bitmaps, Pixel.bmp and ORGs are now contained in the `data` folder rather than in game resources.
 - Add `caret.tbl` and `music.tbl` files to the `data` folder.
 - Add `xm`, `ym` and `boost_fuel` to [ModCS.Player](/api/objects/player/).
