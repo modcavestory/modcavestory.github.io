@@ -9,7 +9,7 @@ Surfaces are represented by an ID. This table contains all vanilla game surfaces
 | Value | Description                    | Additional Info                                              |
 | ----- | ------------------------------ | ------------------------------------------------------------ |
 | 0     | Title screen                   | This surface is created from the bitmap file `/data/Title.bmp`. |
-| 1     | Studio Pixel logo              | This surface is created from the bitmap file `<game executable data>/BITMAP/PIXEL.bmp`. |
+| 1     | Studio Pixel logo              | This surface is created from the bitmap file `/data/pixel.bmp`. |
 | 2     | Level tileset                  | This surface is used by the game to draw tiles. The game loads the tileset bitmap file specified in the [Stage Table](/api/stage/#stage-table) entry for each map to this surface when the player transfers to that map. This surface's size is 256x256. |
 | 6     | Fade effect                    | This surface is created from the bitmap file `/data/Fade.bmp`. |
 | 7     | HUD                            | This surface is exclusive to ModCS. The game draws all HUD elements to this surface. |
@@ -34,7 +34,7 @@ Surfaces are represented by an ID. This table contains all vanilla game surfaces
 | 29    | Value view                     | The game draws damage and XP indicators to this surface. This surface's size is 40x240. |
 | 30-34 | Text line surfaces from 1 to 5 | These surfaces are used by the game for drawing TSC text to. These surfaces are only initialized when TSC starts. Their size is 216x16. The game needs 5 of these for the text scrolling effect. |
 | 35    | Credits text                   | This surface is used by the game for drawing the credits text to. Its height varies on the credits TSC, but its width is 320. |
-| 36    | Credits image                  | This surface is created from the bitmap file `<game executable data>/BITMAP/CREDIT01.bmp`. It can be swapped with other CREDIT bitmaps during the credits TSC. |
+| 36    | Credits image                  | This surface is created from the bitmap file `/data/Credits/Credit01.bmp`. It can be swapped with other `Credit` bitmaps during the credits TSC. |
 | 37    | Casts                          | This surface is created from the bitmap file `/data/Npc/casts.bmp` when the credits start. |
 
 !!! Note

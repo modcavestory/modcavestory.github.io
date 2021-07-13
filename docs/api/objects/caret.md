@@ -11,7 +11,7 @@ A ModCS.Caret is userdata. You may access and edit the following values from it:
 | `xm`            | [Pixel Unit](/api/objects/pixel/)    | X velocity of the Caret. This value does nothing by itself, but can be used with [ModCS.Caret.Move()](/api/objects/caret/functions/#modcscaretmove). |
 | `ym`            | [Pixel Unit](/api/objects/pixel/)    | Y velocity of the Caret. This value does nothing by itself, but can be used with [ModCS.Caret.Move()](/api/objects/caret/functions/#modcscaretmove). |
 | `id`            | [Caret Type ID](/api/objects/caret/id/) | ID of the Caret.                                           |
-| `direct`        | [Direction](/api/objects/direction/) | Direction of the NPC. This mostly does nothing by itself, but is used by different vanilla Carets as a parameter. |
+| `direct`        | [Direction](/api/objects/direction/) | Direction of the Caret. This mostly does nothing by itself, but is used by different vanilla Carets as a parameter. |
 | `ani_no`        | Number (Casted to integer)           | Animation frame value. This variable does nothing by itself, but can be used to switch between animation frames. |
 | `ani_wait`      | Number (Casted to integer)           | Animation timer value. This variable does nothing by itself, but can be used as a timer between animation frames. |
 | `act_no`        | Number (Casted to integer)           | Act state value. This variable does nothing by itself, but can be used to switch between act states. |
@@ -30,12 +30,14 @@ When the game spawns Carets it checks trough the Carets buffer and finds a spot 
 ## ModCS.Caret.Spawn()
 
 ```lua
-ModCS.Caret.Spawn(carettype, x, y)
+ModCS.Caret.Spawn(carettype, x, y, direct)
 ```
 
-Spawns a Caret of [Caret Type](/api/objects/caret/id/) `carettype` on [Pixel Unit](/api/objects/pixel/) coordinates `x` and `y`. 
+Spawns a Caret of [Caret Type](/api/objects/caret/id/) `carettype` on [Pixel Unit](/api/objects/pixel/) coordinates `x` and `y`.
 
-Returns a ModCS.Caret of the spawned NPC. 
+`direct` is an optional parameter and the [Direction](/api/objects/direction/) with which the Caret will spawn.
+
+Returns a ModCS.Caret of the spawned Caret. 
 
 ## ModCS.Caret.GetByBufferIndex()
 

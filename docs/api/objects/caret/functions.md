@@ -11,6 +11,14 @@ Sets the [Rect](/api/drawing/rect/) of `crt` to a Rect with `left`, `top`, `righ
 
 If a `rect` is specified, set the Rect of `crt` to that Rect instead.
 
+## ModCS.Caret.GetRect()
+
+```lua
+ModCS.Caret.GetRect(crt)
+```
+
+Returns `crt`'s [Rect](/api/drawing/rect/).
+
 ## ModCS.Caret.OffsetRect()
 
 ```lua
@@ -27,10 +35,12 @@ Adds `left`, `top`, `right`, `bottom` to the the `left`, `top`, `right`, `bottom
 ModCS.Caret.ActCode(crt, carettype)
 ```
 
+`carettype` is an optional parameter. If not specified, it will be set to `caret`'s `id`.
+
 Runs the action code for [Caret Type](/api/objects/caret/id/) `carettype` to `crt`.
 
 !!! Note
-	This will run the *vanilla* act code for `crttype`. To run any overwritten act functions, run `ModCS.Caret.ActX(crt)` instead (where X is the Caret Type ID). 
+	This will run the *vanilla* act code for `carettype`. To run any overwritten act functions, run functions from the `ModCS.Caret.Act` array instead.  
 
 ## ModCS.Caret.Delete()
 

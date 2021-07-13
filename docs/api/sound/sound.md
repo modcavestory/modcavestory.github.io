@@ -23,3 +23,27 @@ ModCS.Npc.Stop(id)
 ```
 
 Stop playing sound effect `id`.
+
+## ModCS.Sound.ChangeFrequency
+
+```lua
+ModCS.Sound.ChangeFrequency(id, freq)
+```
+
+Change the frequency of sound effect `id` to `freq`.
+
+## ModCS.Sound.ChangeVolume
+
+```lua
+ModCS.Sound.ChangeFrequency(id, volume)
+```
+
+Change the volume of sound effect `id` to `volume`.
+
+## ModCS.Sound.ChangePan
+
+```lua
+ModCS.Sound.ChangePan(id, pan)
+```
+
+Change the panning of sound effect `id` to `pan`.

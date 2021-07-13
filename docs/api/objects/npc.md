@@ -11,7 +11,9 @@ A ModCS.Npc is userdata. You may access and edit the following values from it:
 | `xm`            | [Pixel Unit](/api/objects/pixel/)    | X velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move()](/api/objects/npc/functions/#modcsnpcmove). |
 | `ym`            | [Pixel Unit](/api/objects/pixel/)    | Y velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move()](/api/objects/npc/functions/#modcsnpcmove). |
 | `xm2`           | [Pixel Unit](/api/objects/pixel/)    | Alternative X velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move2()](/api/objects/npc/functions/#modcsnpcmove2). |
-| `xm2`           | [Pixel Unit](/api/objects/pixel/)    | Alternative Y velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move2()](/api/objects/npc/functions/#modcsnpcmove2). |
+| `ym2`         | [Pixel Unit](/api/objects/pixel/)    | Alternative Y velocity of the NPC. This value does nothing by itself, but can be used with [ModCS.Npc.Move2()](/api/objects/npc/functions/#modcsnpcmove2). |
+| `tgt_x`    | [Pixel Unit](/api/objects/pixel/)    | Target X value. This variable does nothing by itself. |
+| `tgt_y`   | [Pixel Unit](/api/objects/pixel/)    | Target Y value. This variable does nothing by itself. |
 | `id`            | [NPC Type ID](/api/objects/npc/id/)    | ID of the NPC.                                               |
 | `flag`          | [Flag](/api/flags/flag/) | Flag of the NPC.                                             |
 | `event`         | [Event](/api/tsc/#events)            | [TSC Event](/api/tsc/#events) of the NPC.                    |
@@ -27,6 +29,8 @@ A ModCS.Npc is userdata. You may access and edit the following values from it:
 | `ani_wait`      | Number (Casted to integer)           | Animation timer value. This variable does nothing by itself, but can be used as a timer between animation frames. |
 | `act_no`        | Number (Casted to integer)           | Act state value. This variable does nothing by itself, but can be changed with the `<ANP` TSC command. |
 | `act_wait`      | Number (Casted to integer)           | Act state timer value. This variable does nothing by itself, but can be used as a timer between act states. |
+| `count1`   | Number (Casted to integer)           | Counter value. This variable does nothing by itself. |
+| `count2` | Number (Casted to integer)           | Counter value. This variable does nothing by itself. |
 | `pNpc`          | [NPC](/api/objects/npc/)             | Parent NPC value.                                            |
 
 ## The NPC Buffer

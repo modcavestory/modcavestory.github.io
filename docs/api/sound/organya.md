@@ -57,3 +57,51 @@ ModCS.Organya.Play(id)
 ```
 
 Changes the current music playing to music `id`.
+
+## ModCS.Organya.GetCurrent()
+
+```lua
+ModCS.Organya.GetCurrent()
+```
+
+Returns the ID of the current track.
+
+## ModCS.Organya.GetOld()
+
+```lua
+ModCS.Organya.GetOld()
+```
+
+Returns the ID of the last track played.
+
+## ModCS.Organya.GetPosition()
+
+```lua
+ModCS.Organya.GetPosition()
+```
+
+Returns the position number of the current track.
+
+## ModCS.Organya.GetOldPosition()
+
+```lua
+ModCS.Organya.GetOldPosition()
+```
+
+Returns the position number of the last track played.
+
+## ModCS.Organya.SetPosition()
+
+```lua
+ModCS.Organya.SetPosition(x)
+```
+
+Sets the position number of the current track to `x`.
+
+## ModCS.Organya.SetVolume()
+
+```lua
+ModCS.Organya.SetVolume(vol)
+```
+
+Sets the volume of the current track to `vol`. 

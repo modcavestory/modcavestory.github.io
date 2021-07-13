@@ -23,6 +23,10 @@ Events are a defined with a `#` and 4 following digits, which together represent
 	<KEY<MSGHello World<NOD<CLO<END
 	```
 
+## ModCS.Tsc.IsRunning()
+
+Returns true if a TextScript event is running. Returns false otherwise.
+
 ## ModCS.Tsc.Run()
 
 ```lua
@@ -62,12 +66,12 @@ During a custom TextScript command, get the `no` argument of the running command
 
 ## Custom Commands
 
-ModCS allows you to overwrite TextScript commands and to have custom ones as well. If a function `ModCS.Tsc.CommandXXX` is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command `<XXX`.
+ModCS allows you to overwrite TextScript commands and to have custom ones as well. If a function `ModCS.Tsc.Command.XXX` is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command `<XXX`.
 
 ??? Example
 	This is an example function for a TextScript command that will print its first argument to the debug console.
 	```lua linenums="1"
-	function ModCS.Tsc.CommandFOO()
+	function ModCS.Tsc.Command.FOO()
 		local no = ModCS.Tsc.GetArgument(1) -- Get the first argument of the running command
 		print(no)
 	end

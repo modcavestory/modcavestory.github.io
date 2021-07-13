@@ -45,3 +45,11 @@ ModCS.Mod.SetStart(no, x, y, eve)
 ```
 
 Sets the default New Game starting point. Parameters are the same as the [ModCS.Stage.Transfer() function](/api/stage/#modcsstagetransfer).
+
+## ModCS.Mod.SetSpikeDamage()
+
+```lua
+ModCS.Mod.SetSpikeDamage(damage)
+```
+
+Sets the damage of the Spike tile type (Attribute 0x42) to `damage`.

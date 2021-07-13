@@ -2,7 +2,7 @@
 
 One of ModCS's Lua API main features is its [NPC API](/api/objects/npc/). In this section of the guide we will be going over basic NPC editing.
 
-To begin editing an NPC Type you simply have to define a `ModCS.Npc.ActX()` function, where X is the [NPC Type ID](/api/objects/npc/id/) you would like to edit. This function will run every frame an NPC of X type exists. The first argument given to this function will be the NPC for which this function is running.
+To begin editing an NPC Type you simply have to define a function in the `ModCS.Npc.Act` with an index of the [NPC Type ID](/api/objects/npc/id/) you would like to edit. This function will run every frame an NPC of this type exists. The first argument given to this function will be the NPC for which this function is running.
 
 Using [ModCS.Npc.ActCode()](/api/objects/npc/functions/#modcsnpcactcode) you may run vanilla NPC code for the NPC given in the function.
 
@@ -13,12 +13,12 @@ Using [ModCS.Npc.ActCode()](/api/objects/npc/functions/#modcsnpcactcode) you may
 	this function will run, and the NPC will be
 	passed to the function as `npc`
 	--]]
-	function ModCS.Npc.Act64(npc)
+	ModCS.Npc.Act[64] = function(npc)
 		--[[
 		Run the vanilla game code for NPC ID 64
 		(First Cave Critter) for `npc`
 		--]]
-		npc:ActCode(64)
+		npc:ActCode()
 	end
 	```
 
@@ -28,8 +28,8 @@ The First Cave Critter, like many vanilla NPCs, uses Act States to differentiate
 
 !!! Example
 	```lua linenums="1"
-	function ModCS.Npc.Act64(npc)
-		npc:ActCode(64)
+	ModCS.Npc.Act[64] = function(npc)
+		npc:ActCode()
 		print(npc.act_no)
 	end
 	```
@@ -48,12 +48,12 @@ This information can help us do certain modifications to the NPC in our code. Fo
 
 !!! Example
 	```lua linenums="1"
-	function ModCS.Npc.Act64(npc)
+	ModCS.Npc.Act[64] = function(npc)
 		if (npc.act_no == 3 and npc:TouchFloor()) then
 			ModCS.Npc.Spawn(4, npc.x, npc.y)
 		end
 	
-		npc:ActCode(64)
+		npc:ActCode()
 	end
 	```
 
@@ -68,8 +68,8 @@ You can find out Animation States using a similar method as the one for finding 
 
 !!! Example
 	```lua linenums="1"
-	function ModCS.Npc.Act64(npc)
-		npc:ActCode(64)
+	ModCS.Npc.Act[64] = function(npc)
+		npc:ActCode()
 		print(npc.ani_no)
 	end
 	```
@@ -83,8 +83,8 @@ Using this information and [`ModCS.Npc.SetRect()`](/api/objects/npc/functions/#m
 
 !!! Example
 	```lua linenums="1"
-	function ModCS.Npc.Act64(npc)
-		npc:ActCode(64)
+	ModCS.Npc.Act[64] = function(npc)
+		npc:ActCode()
 	
 		local rcLeft = {
 			ModCS.Rect.Create(0, 0, 16, 16),
@@ -120,8 +120,8 @@ For a better table syntax, you might want to do regular number tables rather tha
 
 !!! Example
 	```lua linenums="1"
-	function ModCS.Npc.Act64(npc)
-		npc:ActCode(64)
+	ModCS.Npc.Act[64] = function(npc)
+		npc:ActCode()
 	
 		local rcLeft = {
 			{0, 0, 16, 16},

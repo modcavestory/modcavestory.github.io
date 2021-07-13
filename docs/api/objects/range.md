@@ -4,12 +4,12 @@ The **ModCS.RangeRect class** represents Range Rects (Also known as Other Rects)
 
 A ModCS.Rect is userdata. You may access and edit the following values from it:
 
-| Value    | Type                       | Usage                                                        |
-| -------- | -------------------------- | ------------------------------------------------------------ |
-| `front`  | Number (Casted to integer) | The radius from the center to the left side of the rectangle. |
-| `top`    | Number (Casted to integer) | The radius from the center to the top side of the rectangle. |
-| `back`   | Number (Casted to integer) | The radius from the center to the right side of the rectangle. |
-| `bottom` | Number (Casted to integer) | The radius from the center to the bottom side of the rectangle. |
+| Value    | Type                              | Usage                                                        |
+| -------- | --------------------------------- | ------------------------------------------------------------ |
+| `front`  | [Pixel Unit](/api/objects/pixel/) | The radius from the center to the left side of the rectangle. |
+| `top`    | [Pixel Unit](/api/objects/pixel/) | The radius from the center to the top side of the rectangle. |
+| `back`   | [Pixel Unit](/api/objects/pixel/) | The radius from the center to the right side of the rectangle. |
+| `bottom` | [Pixel Unit](/api/objects/pixel/) | The radius from the center to the bottom side of the rectangle. |
 
 ## ModCS.RangeRect.Create()
 

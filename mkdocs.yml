@@ -1,4 +1,5 @@
 site_name: ModCS Documentation
+site_url: https://modcavestory.github.io
 plugins: []
 
 theme:
@@ -68,6 +69,10 @@ nav:
     - 'Sound':
       - 'api/sound/organya.md'
       - 'api/sound/sound.md'
+    - 'api/camera.md'
+    - 'Inventory':
+      - 'api/inventory/arms.md'
+      - 'api/inventory/item.md'
     - 'Game Objects':
       - 'api/objects/pixel.md'
       - 'api/objects/direction.md'
@@ -82,12 +87,20 @@ nav:
         - 'api/objects/npc/collision.md'
         - 'api/objects/npc/id.md'
         - 'api/objects/npc/bits.md'
+      - 'Bullets':
+        - 'api/objects/bullet.md'
+        - 'api/objects/bullet/functions.md'
+        - 'api/objects/bullet/collision.md'
+        - 'api/objects/bullet/id.md'
+        - 'api/objects/bullet/bits.md'
       - 'Carets':
         - 'api/objects/caret.md'
         - 'api/objects/caret/functions.md'
         - 'api/objects/caret/id.md'
     - 'api/mod.md'
     - 'api/options.md'
+    - 'api/deprecated.md'
+  - 'pxl.md'
 
 extra_javascript:
   - assets/dontSaveScroll.js

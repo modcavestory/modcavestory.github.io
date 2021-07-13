@@ -57,3 +57,51 @@ ModCS.Stage.GetName(no)
 ```
 
 `no` is an optional parameter. Returns the stage name value of stage table entry `no`. If `no` is not specified, return the stage name value of the current stage.
+
+## ModCS.Stage.GetTileset()
+
+```lua
+ModCS.Stage.GetTileset(no)
+```
+
+`no` is an optional parameter. Returns the tileset filename value of stage table entry `no`. If `no` is not specified, return the tileset filename value of the current stage.
+
+## ModCS.Stage.GetNpcSheet1()
+
+```lua
+ModCS.Stage.GetNpcSheet1(no)
+```
+
+`no` is an optional parameter. Returns the NPC Sheet 1 filename value of stage table entry `no`. If `no` is not specified, return the NPC Sheet 1 filename value of the current stage.
+
+## ModCS.Stage.GetNpcSheet2()
+
+```lua
+ModCS.Stage.GetNpcSheet1(no)
+```
+
+`no` is an optional parameter. Returns the NPC Sheet 2 filename value of stage table entry `no`. If `no` is not specified, return the NPC Sheet 2 filename value of the current stage.
+
+## ModCS.Stage.GetBackground()
+
+```lua
+ModCS.Stage.GetBackground(no)
+```
+
+`no` is an optional parameter. Returns the Background filename value of stage table entry `no`. If `no` is not specified, return the Background filename value of the current stage.
+
+## ModCS.Stage.GetBackgroundMode()
+
+```lua
+ModCS.Stage.GetBackgroundMode(no)
+```
+
+`no` is an optional parameter. Returns the Background mode value of stage table entry `no`. If `no` is not specified, return the Background mode value of the current stage.
+
+## ModCS.Stage.GetBossNo()
+
+```lua
+ModCS.Stage.GetBackgroundMode(no)
+```
+
+`no` is an optional parameter. Returns the Boss value of stage table entry `no`. If `no` is not specified, return the Boss value of the current stage.

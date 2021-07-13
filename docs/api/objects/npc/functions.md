@@ -11,6 +11,14 @@ Sets the [Rect](/api/drawing/rect/) of `npc` to a Rect with `left`, `top`, `righ
 
 If a `rect` is specified, set the Rect of `npc` to that Rect instead.
 
+## ModCS.Npc.GetRect()
+
+```lua
+ModCS.Npc.GetRect(npc)
+```
+
+Returns `npc`'s [Rect](/api/drawing/rect/).
+
 ## ModCS.Npc.OffsetRect()
 
 ```lua
@@ -35,6 +43,14 @@ If a `rangerect` is specified, set the hitbox of `npc` to that RangeRect instead
 !!! Warning
 	When editing NPC hitboxes make sure that the front and back values of the hitbox are the same, otherwise you might get weird hitbox behavior.
 
+## ModCS.Npc.GetHitbox()
+
+```lua
+ModCS.Npc.GetHitbox(npc)
+```
+
+Returns the hitbox [RangeRect](/api/objects/range/) of `npc`.
+
 ## ModCS.Npc.SetViewbox()
 
 ```lua
@@ -46,16 +62,26 @@ Sets the sprite offset of `npc` to a [RangeRect](/api/objects/range/) with `fron
 
 If a `rangerect` is specified, set the sprite offset of `npc` to that RangeRect instead.
 
+## ModCS.Npc.GetViewbox()
+
+```lua
+ModCS.Npc.GetViewbox(npc)
+```
+
+Returns the sprite offset [RangeRect](/api/objects/range/) of `npc`.
+
 ## ModCS.Npc.ActCode()
 
 ```lua
 ModCS.Npc.ActCode(npc, npctype)
 ```
 
+`npctype` is an optional parameter. If not specified, it will be set to `npc`'s `id`.
+
 Runs the action code for [NPC Type](/api/objects/npc/id/) `npctype` to `npc`.
 
 !!! Note
-	This will run the *vanilla* act code for `npctype`. To run any overwritten act functions, run `ModCS.Npc.ActX(npc)` instead (where X is the NPC Type ID). 
+	This will run the *vanilla* act code for `npctype`. To run any overwritten act functions, run functions from the `ModCS.Npc.Act` array instead. 
 
 ## ModCS.Npc.IsHit()
 

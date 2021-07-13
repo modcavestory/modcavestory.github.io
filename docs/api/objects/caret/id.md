@@ -31,12 +31,12 @@ A table of default Caret sprite offsets are stored in a `caret.tbl` file in the 
 
 ## Overriding Carets
 
-ModCS allows you to override a Caret type's act code. If a function `ModCS.Caret.ActX` (where `X` is the Caret Type ID of the Caret Type you want to override) is defined in your Lua script the game will run that function instead of the built-in Caret act code. A [ModCS.Caret](/api/objects/caret/) will be passed as the first argument of the function when it's called.
+ModCS allows you to override a Caret type's act code.  If a function in the `ModCS.Caret.Act` array is defined with the index `X` (where `X` is the Caret Type ID of the Caret Type you want to override) in your Lua script the game will run that function instead of the built-in Caret act code. A [ModCS.Caret](/api/objects/caret/) will be passed as the first argument of the function when it's called.
 
 ??? Example
 	This example will set the [Rect](/api/drawing/rect/) of Caret Type 1 to 0,0,8,8.
 	```lua linenums="1"
-	function ModCS.Caret.Act1(crt)
+	ModCS.Caret.Act[1] = function(crt)
 		crt:SetRect(0,0,8,8)
 	end
 	```

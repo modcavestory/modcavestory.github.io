@@ -15,6 +15,10 @@ Functions related to the main game loop. Stored in the **ModCS.Game** object.
 
 ## ModCS.Game.GetMode()
 
+```lua
+ModCS.Game.GetMode()
+```
+
 Return a number that represents the current game mode.
 
 | Value | Game mode         |
@@ -24,6 +28,10 @@ Return a number that represents the current game mode.
 | 3     | Action.           |
 
 ## ModCS.Game.IsNew()
+
+```lua
+ModCS.Game.IsNew()
+```
 
 Returns true if the 'New' option in the title screen was selected. Returns false otherwise.
 
@@ -40,9 +48,25 @@ This function is called whenever a game mode is started.
 	end
 	```
 
+## ModCS.Game.CanControl()
+
+```lua
+ModCS.Game.CanControl()
+```
+
+Returns false during a `<KEY` or `<PRI`. Returns true otherwise.
+
+## ModCS.Game.CanAct()
+
+```lua
+ModCS.Game.CanAct()
+```
+
+Returns false during a `<PRI`. Returns true otherwise.
+
 ## ModCS.Game.Act()
 
-This function is called every frame before anything is drawn in the main game loop.
+This function is called every frame before anything is updated or drawn in the main game loop.
 
 ??? Example
 	This example will add 1 to a variable `foo` every frame.
@@ -52,6 +76,10 @@ This function is called every frame before anything is drawn in the main game lo
 		foo = foo + 1
 	end
 	```
+
+## ModCS.Game.Update()
+
+This function is called every frame before anything is drawn in the main game loop. It differentiates from ModCS.Game.Act only on when exactly it's ran.
 
 ## ModCS.Game.Draw()
 

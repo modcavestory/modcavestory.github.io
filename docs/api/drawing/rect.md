@@ -49,22 +49,17 @@ Sets the ModCS.Rect given in the `rect` parameter to a ModCS.Rect with the follo
 
 ```lua
 ModCS.Rect.Put(rect, x, y, surface, alpha)
+ModCS.Rect.Put(rect, x, y, surface, surfaceto)
 ```
 
 Draw the given Rect from the surface with ID `surface` to the screen with coordinates `x` and `y`.
 
 The `alpha` parameter is optional and is a Boolean. If set to false the game will draw the rect without removing any fully black pixels. The default value is true.
 
+The `surfaceto` parameter is optional and is a number. If set the game will draw the rect to the surface with ID `surfaceto`.
+
 !!! Note
 	For a more traditional PutBitmap usage you may use [ModCS.Rect.PutEx()](/api/drawing/rect/#modcsrectputex).
-
-## ModCS.Rect.Put2Surface()
-
-```lua
-ModCS.Rect.Put(rect, x, y, surfacefrom, surfaceto)
-```
-
-Draw the given Rect from the surface with ID `surfacefrom` to the surface with ID `surfaceto`.
 
 ## ModCS.Rect.PutEx()
 

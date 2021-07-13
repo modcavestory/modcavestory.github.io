@@ -2,7 +2,7 @@
 
 Now, obviously, you would have to download ModCS.
 
-[:material-download: Download Latest ModCS](/assets/releases/modcs0112.zip){ .md-button .md-button--primary }
+[:material-download: Download Latest ModCS](/assets/releases/modcs0200.zip){ .md-button .md-button--primary }
 
 The downloaded ZIP will need to be extracted before usage, you can do that with a program like [7-Zip](https://www.7-zip.org).
 
@@ -27,12 +27,13 @@ The following guide will show you how to migrate a Freeware `data` folder to Mod
 1. Make sure all bitmaps in your data folder have a `.bmp` extension.
 2. Create a `Scripts` folder in `data` and create an empty `main.lua` file there. (Make sure you edit the file extension).
 3. From a vanilla ModCS install copy the `data/bullet.tbl` file (Or from a PC Cave Story+ install copy the `data/base/bullet.tbl` file) to your mod's `data` folder.
-4. From a vanilla ModCS install copy the `data/caret.tbl` and `data/music.tbl` files to your mod's `data` folder.
-5. Move all ORG files from Resources to a `data/Org` folder using Resource Hacker (Make sure they have a `.org` file extension).
-6. Move all Credit bitmaps from Resources to a `data/Credits` folder using Resource Hacker (Make sure they have a `.bmp` file extension).
-7. Move the PIXEL bitmap from Resources to the `data` folder using Resource Hacker (Make sure it has a `.bmp` file extension).
-8. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your Stage Table to a `stage.tbl` and place it in your `data` folder. 
-9. Replace your mod EXE with the ModCS EXE.
+4. From a vanilla ModCS install copy the `data/arms_level.tbl` file (Or from a PC Cave Story+ install copy the `data/base/arms_level.tbl` file) to your mod's `data` folder.
+5. From a vanilla ModCS install copy the `data/caret.tbl` and `data/music.tbl` files to your mod's `data` folder.
+6. Move all ORG files from Resources to a `data/Org` folder using Resource Hacker (Make sure they have a `.org` file extension).
+7. Move all Credit bitmaps from Resources to a `data/Credits` folder using Resource Hacker (Make sure they have a `.bmp` file extension).
+8. Move the PIXEL bitmap from Resources to the `data` folder using Resource Hacker (Make sure it has a `.bmp` file extension).
+9. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your Stage Table to a `stage.tbl` and place it in your `data` folder. 
+10. Replace your mod EXE with the ModCS EXE.
 
 ### 0.1.1.2 - Migrating from CSE2 Enhanced
 
@@ -49,6 +50,7 @@ The following guide will show you how to migrate a CSE2 Enhanced `data` folder t
 6. Move all ORG files from `data/Resource/ORG` to `data/Org`.
 7. Create a `Scripts` folder in `data` and create an empty `main.lua` file there. (Make sure you edit the file extension).
 8. From a vanilla ModCS install copy the `data/bullet.tbl` file (Or from a PC Cave Story+ install copy the `data/base/bullet.tbl` file) to your mod's `data` folder.
-9. From a vanilla ModCS install copy the `data/caret.tbl` and `data/music.tbl` files to your mod's `data` folder.
-10. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your `data/mrmap.bin` file to a `stage.tbl`. 
-11. Replace your mod EXE with the ModCS EXE.
+9. From a vanilla ModCS install copy the `data/arms_level.tbl` file (Or from a PC Cave Story+ install copy the `data/base/arms_level.tbl` file) to your mod's `data` folder.
+10. From a vanilla ModCS install copy the `data/caret.tbl` and `data/music.tbl` files to your mod's `data` folder.
+11. Using [The King's Table](/guide/intro/editors/#022-the-kings-table) convert your `data/mrmap.bin` file to a `stage.tbl`. 
+12. Replace your mod EXE with the ModCS EXE.

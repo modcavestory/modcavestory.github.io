@@ -41,12 +41,12 @@ A table of default NPC properties are stored in a `npc.tbl` file in the data fol
 
 ## Overriding NPCs
 
-ModCS allows you to override an NPC type's act code. If a function `ModCS.Npc.ActX` (where `X` is the NPC Type ID of the NPC Type you want to override) is defined in your Lua script the game will run that function instead of the built-in NPC act code. A [ModCS.Npc](/api/objects/npc/) will be passed as the first argument of the function when it's called.
+ModCS allows you to override an NPC type's act code. If a function in the `ModCS.Npc.Act` array is defined with the index `X` (where `X` is the NPC Type ID of the NPC Type you want to override) in your Lua script the game will run that function instead of the built-in NPC act code. A [ModCS.Npc](/api/objects/npc/) will be passed as the first argument of the function when it's called.
 
 ??? Example
 	This example will set the [Rect](/api/drawing/rect/) of NPC Type 0 (The Null NPC) to 16,0,32,16.
 	```lua linenums="1"
-	function ModCS.Npc.Act0(npc)
+	ModCS.Npc.Act[0] = function(npc)
 		npc:SetRect(16,0,32,16)
 	end
 	```
