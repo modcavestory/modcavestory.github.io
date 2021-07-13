@@ -34,7 +34,7 @@ To launch Booster's Lab, run `launch_classic.bat`.
 
 Download and extract The King's Table from here: 
 
-[:material-download: Download The King's Table](https://github.com/Brayconn/TheKingsTable/releases/download/pre-2021.01.13/TheKingsTable.2021.01.13.zip){ .md-button .md-button--primary }
+[:material-download: Download The King's Table](https://ci.appveyor.com/api/projects/brayconn/thekingstable/artifacts/Release.zip){ .md-button .md-button--primary }
 
 To launch The King's Table, run `CaveStoryEditor.exe`.
 
