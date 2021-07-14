@@ -2,6 +2,22 @@
 
 Old releases will not be supported.
 
+## ModCS 0.2.0.1
+
+??? Info "Changelog"
+	- Fix an issue with the new way of defining [custom TextScript commands](/api/tsc/#custom-commands).
+	- Fix an issue with the Polar Star recreation example script.
+
+### Updating
+
+To update from ModCS 0.2.0.0:
+
+- Replace your ModCS executable with a ModCS 0.2.0.1 one.
+
+### Download
+
+[:material-download: Download ModCS 0.2.0.1](/assets/releases/modcs0201.zip)
+
 ## ModCS 0.2.0.0
 
 ??? Info "Changelog"
