@@ -72,6 +72,30 @@ ModCS.Arms.SwitchFirst()
 
 Switches the currently selected weapon to the first weapon in the inventory.
 
+## ModCS.Arms.AddExp()
+
+```lua
+ModCS.Arms.AddExp(exp)
+```
+
+Adds `exp` amount of XP to the player.
+
+## ModCS.Arms.RemoveExp()
+
+```lua
+ModCS.Arms.RemoveExp(exp)
+```
+
+Removes `exp` amount of XP from the player.
+
+## ModCS.Arms.GetLevels()
+
+```lua
+ModCS.Arms.GetLevels(id)
+```
+
+Returns an array of the XP requirements for each level of weapon of type `id`. These values are read from the `data/arms_level.tbl` file.
+
 ## ModCS.Arms.GetCurrent()
 
 ```lua
