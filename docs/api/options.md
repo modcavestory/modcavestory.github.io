@@ -13,4 +13,5 @@ Vanilla Cave Story has some extra functionality if certain empty files without f
 These options are not present in vanilla, but were added in ModCS.
 
 - `debug` - Enables the Debug Console and unhides the "Debug Save" option.
+- `2x` - Multiplies all drawing [Rects](/api/drawing/rect/) by two, allowing you to use sprites double the size of the vanilla game's.
 - `ntsc` - Makes the limit of the game's framerate 60 FPS.
