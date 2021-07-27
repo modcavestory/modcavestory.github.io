@@ -1064,6 +1064,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modcsarmsaddexp" class="md-nav__link">
+    ModCS.Arms.AddExp()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcsarmsremoveexp" class="md-nav__link">
+    ModCS.Arms.RemoveExp()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcsarmsgetlevels" class="md-nav__link">
+    ModCS.Arms.GetLevels()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modcsarmsgetcurrent" class="md-nav__link">
     ModCS.Arms.GetCurrent()
   </a>
@@ -1626,6 +1647,18 @@
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Arms</span><span class="p">.</span><span class="n">SwitchFirst</span><span class="p">()</span>
 </code></pre></div>
 <p>Switches the currently selected weapon to the first weapon in the inventory.</p>
+<h2 id="modcsarmsaddexp">ModCS.Arms.AddExp()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Arms</span><span class="p">.</span><span class="n">AddExp</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
+</code></pre></div>
+<p>Adds <code>exp</code> amount of XP to the player.</p>
+<h2 id="modcsarmsremoveexp">ModCS.Arms.RemoveExp()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Arms</span><span class="p">.</span><span class="n">RemoveExp</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
+</code></pre></div>
+<p>Removes <code>exp</code> amount of XP from the player.</p>
+<h2 id="modcsarmsgetlevels">ModCS.Arms.GetLevels()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Arms</span><span class="p">.</span><span class="n">GetLevels</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+</code></pre></div>
+<p>Returns an array of the XP requirements for each level of weapon of type <code>id</code>. These values are read from the <code>data/arms_level.tbl</code> file.</p>
 <h2 id="modcsarmsgetcurrent">ModCS.Arms.GetCurrent()</h2>
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Arms</span><span class="p">.</span><span class="n">GetCurrent</span><span class="p">()</span>
 </code></pre></div>

@@ -1297,6 +1297,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modcsnpctriggerbox" class="md-nav__link">
+    ModCS.Npc.TriggerBox()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1646,6 +1653,12 @@
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">Move2</span><span class="p">(</span><span class="n">npc</span><span class="p">)</span>
 </code></pre></div>
 <p>Adds <code>xm2</code> and <code>ym2</code> of <code>npc</code> to <code>npc</code>'s <code>x</code> and <code>y</code>. </p>
+<h2 id="modcsnpctriggerbox">ModCS.Npc.TriggerBox()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">TriggerBox</span><span class="p">(</span><span class="n">npc</span><span class="p">,</span> <span class="n">front</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">back</span><span class="p">,</span> <span class="n">bottom</span><span class="p">)</span>
+<span class="n">ModCS</span><span class="p">.</span><span class="n">Npc</span><span class="p">.</span><span class="n">TriggerBox</span><span class="p">(</span><span class="n">npc</span><span class="p">,</span> <span class="n">rangerect</span><span class="p">)</span>
+</code></pre></div>
+<p>Returns true if the player is in a range of a <a href="/api/objects/range/">RangeRect</a> with <code>front</code>, <code>top</code>, <code>back</code>, <code>bottom</code> to <code>npc</code>. Returns false otherwise.</p>
+<p>If a <code>rangerect</code> is specified, set the range used will be the one of the RangeRect instead.</p>
                 
               
               
