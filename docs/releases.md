@@ -2,6 +2,24 @@
 
 Old releases will not be supported.
 
+## ModCS 0.2.1.0
+
+??? Info "Changelog"
+	- Add functions for adding and removing EXP from the player to [ModCS.Arms](/api/inventory/arms/).
+	- Add [ModCS.Arms.GetLevels()](/api/inventory/arms/#modcsarmsgetlevels).
+	- Add [ModCS.Npc.TriggerBox()](/api/objects/npc/functions/#modcsnpctriggerbox).
+	- Update examples.
+
+### Updating
+
+To update from ModCS 0.2.0.1:
+
+- Replace your ModCS executable with a ModCS 0.2.1.0 one.
+
+### Download
+
+[:material-download: Download ModCS 0.2.1.0](/assets/releases/modcs0210.zip)
+
 ## ModCS 0.2.0.1
 
 ??? Info "Changelog"

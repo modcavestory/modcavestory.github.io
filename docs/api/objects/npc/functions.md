@@ -130,3 +130,14 @@ ModCS.Npc.Move2(npc)
 ```
 
 Adds `xm2` and `ym2` of `npc` to `npc`'s `x` and `y`. 
+
+## ModCS.Npc.TriggerBox()
+
+```lua
+ModCS.Npc.TriggerBox(front, top, back, bottom)
+ModCS.Npc.TriggerBox(rangerect)
+```
+
+Returns true if the player is in a range of a [RangeRect](/api/objects/range/) with `front`, `top`, `back`, `bottom` to `npc`. Returns false otherwise.
+
+If a `rangerect` is specified, set the range used will be the one of the RangeRect instead.
