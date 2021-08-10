@@ -2,6 +2,10 @@
 
 These features have been deprecated and it's recommended not to use them.
 
+## ModCS.Organya
+
+ModCS.Organya was the namespace for playing music before [ModCS 0.2.1.0](/releases/#modcs-0210). It was renamed to comply with the planned feature of playing WAV/OGG files as music.
+
 ## ModCS.Rect.Put2Surface()
 
 ```lua

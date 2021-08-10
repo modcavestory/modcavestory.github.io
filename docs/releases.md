@@ -8,6 +8,7 @@ Old releases will not be supported.
 	- Add functions for adding and removing EXP from the player to [ModCS.Arms](/api/inventory/arms/).
 	- Add [ModCS.Arms.GetLevels()](/api/inventory/arms/#modcsarmsgetlevels).
 	- Add [ModCS.Npc.TriggerBox()](/api/objects/npc/functions/#modcsnpctriggerbox).
+	- Change ModCS.Organya to [ModCS.Music](/api/sound/music/).
 	- Update examples.
 
 ### Updating
@@ -57,9 +58,9 @@ To update from ModCS 0.2.0.0:
 	- Make `tgt_x` and `tgt_y` accessible from [ModCS.Npc](/api/objects/npc/)s\*.
 	- Add functions to [ModCS.Stage](/api/stage/) for reading every [Stage Table](/api/stage/#stage-table) parameter.
 	- Add [ModCS.Mod.SetSpikeDamage()](/api/mod/#modcsmodsetspikedamage).
-	- Add functions to [ModCS.Organya](/api/sound/organya/) for getting and setting the position of the current playing track and setting the volume.
-	- Add [ModCS.Organya.GetCurrent()](/api/sound/organya/#modcsorganyagetcurrent).
-	- Add [ModCS.Organya.GetOld()](/api/sound/organya/#modcsorganyagetold) and [ModCS.Organya.GetOldPosition()](/api/sound/organya/#modcsorganyagetposition).
+	- Add functions to [ModCS.Organya](/api/sound/music/) for getting and setting the position of the current playing track and setting the volume.
+	- Add [ModCS.Organya.GetCurrent()](/api/sound/music/#modcsmusicgetcurrent).
+	- Add [ModCS.Organya.GetOld()](/api/sound/music/#modcsmusicgetold) and [ModCS.Organya.GetOldPosition()](/api/sound/music/#modcsmusicgetposition).
 	- Add functions to [ModCS.Sound](/api/sound/sound/) for modifying frequency, volume and panning of individual sound effects.
 	- Add an optional direction argument to [ModCS.Caret.Spawn()](/api/objects/caret/#modcscaretspawn).
 	- [ModCS.RangeRect](/api/objects/range/)s now use [Pixel Units](/api/objects/pixel/).

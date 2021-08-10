@@ -1,6 +1,6 @@
-# ModCS.Organya
+# ModCS.Music
 
-The **ModCS.Organya namespace** contains functions related to playing Organya music.
+The **ModCS.Music namespace** contains functions related to playing music.
 
 ## Music ID reference
 
@@ -50,58 +50,58 @@ The **ModCS.Organya namespace** contains functions related to playing Organya mu
 | 41       | White Stone Wall  | WHITE         |
 
 
-## ModCS.Organya.Play()
+## ModCS.Music.Play()
 
 ```lua
-ModCS.Organya.Play(id)
+ModCS.Music.Play(id)
 ```
 
 Changes the current music playing to music `id`.
 
-## ModCS.Organya.GetCurrent()
+## ModCS.Music.GetCurrent()
 
 ```lua
-ModCS.Organya.GetCurrent()
+ModCS.Music.GetCurrent()
 ```
 
 Returns the ID of the current track.
 
-## ModCS.Organya.GetOld()
+## ModCS.Music.GetOld()
 
 ```lua
-ModCS.Organya.GetOld()
+ModCS.Music.GetOld()
 ```
 
 Returns the ID of the last track played.
 
-## ModCS.Organya.GetPosition()
+## ModCS.Music.GetPosition()
 
 ```lua
-ModCS.Organya.GetPosition()
+ModCS.Music.GetPosition()
 ```
 
 Returns the position number of the current track.
 
-## ModCS.Organya.GetOldPosition()
+## ModCS.Music.GetOldPosition()
 
 ```lua
-ModCS.Organya.GetOldPosition()
+ModCS.Music.GetOldPosition()
 ```
 
 Returns the position number of the last track played.
 
-## ModCS.Organya.SetPosition()
+## ModCS.Music.SetPosition()
 
 ```lua
-ModCS.Organya.SetPosition(x)
+ModCS.Music.SetPosition(x)
 ```
 
 Sets the position number of the current track to `x`.
 
-## ModCS.Organya.SetVolume()
+## ModCS.Music.SetVolume()
 
 ```lua
-ModCS.Organya.SetVolume(vol)
+ModCS.Music.SetVolume(vol)
 ```
 
 Sets the volume of the current track to `vol`. 

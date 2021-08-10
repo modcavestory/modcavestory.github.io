@@ -67,7 +67,7 @@ nav:
       - 'api/flags/flag.md'
       - 'api/flags/skipflag.md'
     - 'Sound':
-      - 'api/sound/organya.md'
+      - 'api/sound/music.md'
       - 'api/sound/sound.md'
     - 'api/camera.md'
     - 'Inventory':
