@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://modcavestory.github.io/options/</loc>
+         <lastmod>2021-08-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://modcavestory.github.io/pxl/</loc>
          <lastmod>2021-08-10</lastmod>
          <changefreq>daily</changefreq>
@@ -47,11 +52,6 @@
     </url>
     <url>
          <loc>https://modcavestory.github.io/api/modcs/</loc>
-         <lastmod>2021-08-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://modcavestory.github.io/api/options/</loc>
          <lastmod>2021-08-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
