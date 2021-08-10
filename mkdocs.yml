@@ -98,9 +98,9 @@ nav:
         - 'api/objects/caret/functions.md'
         - 'api/objects/caret/id.md'
     - 'api/mod.md'
-    - 'api/options.md'
     - 'api/deprecated.md'
   - 'pxl.md'
+  - 'options.md'
 
 extra_javascript:
   - assets/dontSaveScroll.js
