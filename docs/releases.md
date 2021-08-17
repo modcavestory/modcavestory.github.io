@@ -2,6 +2,21 @@
 
 Old releases will not be supported.
 
+## ModCS 0.2.1.1
+
+??? Info "Changelog"
+	- Make the `pNpc` value of [ModCS.Npc](/api/objects/npc/)s return `nil` if it doesn't contain an NPC.
+
+### Updating
+
+To update from ModCS 0.2.1.0:
+
+- Replace your ModCS executable with a ModCS 0.2.1.1 one.
+
+### Download
+
+[:material-download: Download ModCS 0.2.1.1](/assets/releases/modcs0211.zip)
+
 ## ModCS 0.2.1.0
 
 ??? Info "Changelog"
