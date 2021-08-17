@@ -25,7 +25,7 @@ ModCS.Player.Equip(value)
 
 Sets the equip value `value`.
 
-## ModCS.Player.Equip()
+## ModCS.Player.Unequip()
 
 ```lua
 ModCS.Player.Unequip(value)
