@@ -5,7 +5,7 @@ Old releases will not be supported.
 ## ModCS 0.2.1.1
 
 ??? Info "Changelog"
-	- Make the `pNpc` value of [ModCS.Npc](/api/objects/npc/)s return `nil` if it doesn't contain an NPC.
+	- Fix the `pNpc` value of [ModCS.Npc](/api/objects/npc/)s not returning `nil` if it doesn't contain an NPC.
 
 ### Updating
 
